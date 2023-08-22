@@ -8,6 +8,6 @@ class MyRouteInformationParser extends PageStackRouteInformationParser {
   @override
   Future<PagePath> parsePagePath(RouteInformation ri) async {
     return BookDetailsPath.tryParse(ri) ??
-        const BookListPath(); // The default page if nothing worked.
+        const BookListPath();
   }
 }
